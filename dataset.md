@@ -16,4 +16,4 @@
 - **9. mask**
 
 ## Пример изображения:
-![Gist](https://github.com/irina-krivosheina/AI-24-Team-45/blob/main/images/expl_bbox.png?raw=true)
+![Gist](https://github.com/irina-krivosheina/AI-24-Team-45/blob/main/images/expl_bbox.jpeg?raw=true)
