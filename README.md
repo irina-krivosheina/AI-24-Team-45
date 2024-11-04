@@ -11,5 +11,6 @@
 
 Датасет: UA-DETRAC dataset
 https://www.kaggle.com/datasets/dtrnngc/ua-detrac-dataset
+https://disk.yandex.ru/d/dzpnuHI0acfEgw
 
 Алгоритм детекции: YOLOv8
