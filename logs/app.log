@@ -55,3 +55,14 @@
 2024-12-28 18:35:47.248 | INFO     | app.routers.detection:set_model:29 - Model set to /Users/dmitriizverev/Developer/HSE/AI-24-Team-45/model/yolov5_weights_1.pt
 2024-12-28 18:35:51.455 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from /Users/dmitriizverev/Developer/HSE/AI-24-Team-45/model/yolov5_weights.pt
 2024-12-28 18:35:51.663 | INFO     | app.routers.detection:set_model:29 - Model set to /Users/dmitriizverev/Developer/HSE/AI-24-Team-45/model/yolov5_weights.pt
+2024-12-28 18:42:11.393 | INFO     | app.routers.detection:detect_transport_image:49 - Received request for /detect/image/
+2024-12-28 18:42:11.394 | INFO     | app.utils.image_processing:read_image:7 - Reading image from bytes
+2024-12-28 18:42:11.403 | INFO     | app.models.yolo_model:detect:10 - Running detection on image
+2024-12-28 18:42:15.970 | INFO     | app.routers.detection:detect_transport_image:49 - Received request for /detect/image/
+2024-12-28 18:42:15.970 | INFO     | app.utils.image_processing:read_image:7 - Reading image from bytes
+2024-12-28 18:42:15.972 | INFO     | app.models.yolo_model:detect:10 - Running detection on image
+2024-12-28 18:42:49.081 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from /Users/dmitriizverev/Developer/HSE/AI-24-Team-45/model/yolov5_weights_1.pt
+2024-12-28 18:42:49.383 | INFO     | app.routers.detection:set_model:30 - Model set to /Users/dmitriizverev/Developer/HSE/AI-24-Team-45/model/yolov5_weights_1.pt
+2024-12-28 18:42:53.574 | INFO     | app.routers.detection:detect_transport_image:49 - Received request for /detect/image/
+2024-12-28 18:42:53.574 | INFO     | app.utils.image_processing:read_image:7 - Reading image from bytes
+2024-12-28 18:42:53.576 | INFO     | app.models.yolo_model:detect:10 - Running detection on image

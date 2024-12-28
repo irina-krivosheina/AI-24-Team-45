@@ -8,7 +8,9 @@ API_URL = "http://localhost:8000"
 
 st.title("Transport Detection with YOLOv5")
 
-def detect_image_page(uploaded_file, selected_model):
+uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
+
+if uploaded_file is not None:
     col1, col2 = st.columns(2)
 
     with col1:
@@ -20,8 +22,8 @@ def detect_image_page(uploaded_file, selected_model):
         logger.info("Detection button clicked")
         try:
             files = {"file": uploaded_file.getvalue()}
-            response = requests.post(f"{API_URL}/detect/image/", files=files, params={"model_path": selected_model})
-            logger.info(f"Request sent to {API_URL}/detect/image/ with model {selected_model}")
+            response = requests.post(f"{API_URL}/detect/image/", files=files)
+            logger.info(f"Request sent to {API_URL}/detect/image/")
 
             if response.status_code == 200:
                 with col2:
