@@ -15,12 +15,15 @@ if st.sidebar.button("Set Model"):
     model_path = os.path.join(model_dir, selected_model)
     if not os.path.exists(model_path):
         st.sidebar.error(f"Model file not found: {model_path}")
+        logger.error(f"Model file not found: {model_path}")
     else:
         response = requests.post(f"{API_URL}/set_model/", json={"model_path": model_path})
         if response.status_code == 200:
             st.sidebar.success(f"Model set to {selected_model}")
+            logger.info(f"Model set to {selected_model}")
         else:
             st.sidebar.error("Failed to set model")
+            logger.error("Failed to set model")
 
 detect_image_page = st.Page(
     "pages/detect_image_page.py", title="Detect Image", icon="🚗", default=True
