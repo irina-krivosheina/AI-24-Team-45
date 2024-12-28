@@ -1,0 +1,368 @@
+2024-12-26 19:35:50.874 | INFO     | __main__:<module>:19 - Image uploaded
+2024-12-26 19:35:50.874 | INFO     | __main__:<module>:19 - Image uploaded
+2024-12-26 19:35:54.564 | INFO     | __main__:<module>:19 - Image uploaded
+2024-12-26 19:35:54.564 | INFO     | __main__:<module>:19 - Image uploaded
+2024-12-26 19:35:54.564 | INFO     | __main__:<module>:19 - Image uploaded
+2024-12-26 19:35:54.566 | INFO     | __main__:<module>:22 - Detection button clicked
+2024-12-26 19:35:54.566 | INFO     | __main__:<module>:22 - Detection button clicked
+2024-12-26 19:35:54.566 | INFO     | __main__:<module>:22 - Detection button clicked
+2024-12-26 19:35:54.576 | ERROR    | __main__:<module>:37 - Exception during detection: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /detect/image/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1039ff2b0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-26 19:35:54.576 | ERROR    | __main__:<module>:37 - Exception during detection: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /detect/image/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1039ff2b0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-26 19:35:54.576 | ERROR    | __main__:<module>:37 - Exception during detection: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /detect/image/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1039ff2b0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-27 16:52:32.405 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:52:32.405 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:52:34.360 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:52:34.360 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:52:34.360 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:52:34.362 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:52:34.362 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:52:34.362 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:52:34.373 | ERROR    | __main__:<module>:44 - Exception during detection: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /detect/image/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x104b2b4f0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-27 16:52:34.373 | ERROR    | __main__:<module>:44 - Exception during detection: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /detect/image/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x104b2b4f0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-27 16:52:34.373 | ERROR    | __main__:<module>:44 - Exception during detection: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /detect/image/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x104b2b4f0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2024-12-27 16:53:37.760 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:53:37.760 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:53:37.760 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:53:37.760 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:53:37.760 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:53:37.760 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:53:37.760 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:53:37.760 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:53:37.867 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:53:37.867 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:53:37.867 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:53:37.867 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:53:37.870 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:53:37.870 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:53:37.870 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:53:37.870 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:01.733 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:01.733 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:01.733 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:01.733 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:01.733 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:01.733 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:06.757 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:06.757 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:06.757 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:06.757 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:06.757 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:06.757 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:06.757 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:06.758 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:06.758 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:06.758 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:06.758 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:06.758 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:06.758 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:06.758 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:06.867 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:06.867 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:06.867 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:06.867 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:06.867 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:06.867 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:06.867 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:06.872 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:06.872 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:06.872 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:06.872 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:06.872 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:06.872 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:06.872 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:30.145 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:30.145 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:30.145 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:30.145 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:30.145 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:30.145 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:30.145 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:30.145 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:30.145 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:30.145 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:30.145 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:31.725 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:31.725 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:31.725 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:31.725 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:31.725 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:31.725 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:31.725 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:31.725 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:31.725 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:31.725 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:31.725 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:31.725 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:54:31.726 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:31.726 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:31.726 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:31.726 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:31.726 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:31.726 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:31.726 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:31.726 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:31.726 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:31.726 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:31.726 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:31.726 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 16:54:31.844 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:31.844 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:31.844 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:31.844 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:31.844 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:31.844 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:31.844 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:31.844 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:31.844 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:31.844 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:31.844 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:31.844 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 16:54:31.849 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:31.849 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:31.849 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:31.849 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:31.849 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:31.849 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:31.849 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:31.849 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:31.849 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:31.849 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:31.849 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:54:31.849 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 16:57:00.388 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:00.388 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:00.388 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:00.388 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:00.388 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:00.388 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:00.388 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:00.388 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:00.388 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:00.388 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:00.388 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:00.388 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:00.388 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:00.388 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:00.388 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:00.388 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:00.388 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.854 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.855 | INFO     | __main__:<module>:52 - Get Coordinates button clicked
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | INFO     | __main__:<module>:56 - Request sent to http://localhost:8000/detect/
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:02.917 | ERROR    | __main__:<module>:64 - Failed to retrieve coordinates with status code: 500
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:45.640 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:47.392 | INFO     | __main__:<module>:49 - Image uploaded for coordinates
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 16:57:48.709 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.087 | INFO     | __main__:<module>:25 - Image uploaded
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.088 | INFO     | __main__:<module>:28 - Detection button clicked
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.198 | INFO     | __main__:<module>:32 - Request sent to http://localhost:8000/detect/image/
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed
+2024-12-27 17:00:05.203 | INFO     | __main__:<module>:38 - Detection successful, image displayed

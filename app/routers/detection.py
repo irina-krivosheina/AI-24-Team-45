@@ -1,15 +1,37 @@
-from fastapi import APIRouter, File, UploadFile
+from fastapi import APIRouter, File, UploadFile, Query, HTTPException
 from fastapi.responses import StreamingResponse
+
 from app.models.yolo_model import YOLOModel
 from app.utils.image_processing import read_image
+
+from app.models.model_path import ModelPath
+
 import cv2
 import numpy as np
-import io
 from typing import Annotated, List, Dict
 from loguru import logger
+import os
+import io
 
 router = APIRouter()
-model = YOLOModel('model/yolov5_weights.pt')
+
+DEFAULT_MODEL_PATH = 'model/yolov5_weights.pt'
+current_model_path = DEFAULT_MODEL_PATH
+model = YOLOModel(current_model_path)
+
+
+@router.post("/set_model/")
+async def set_model(data: ModelPath):
+    global model
+    try:
+        if not os.path.exists(data.model_path):
+            raise ValueError("Model path does not exist")
+        model = YOLOModel(data.model_path)
+        logger.info(f"Model set to {data.model_path}")
+        return {"message": f"Model set to {data.model_path}"}
+    except Exception as e:
+        logger.error(f"Error setting model: {e}")
+        raise HTTPException(status_code=400, detail="Invalid model path")
 
 @router.post("/detect/", response_model=List[Dict[str, float]])
 async def detect_transport_coordinates(file: Annotated[UploadFile, File(...)]) -> List[Dict[str, float]]:

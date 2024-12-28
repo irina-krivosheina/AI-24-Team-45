@@ -1,0 +1,57 @@
+2024-12-27 16:48:39.632 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-27 16:48:56.323 | INFO     | app.main:root:18 - Root endpoint accessed
+2024-12-27 16:53:37.106 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-27 16:53:37.764 | INFO     | app.routers.detection:detect_transport_image:27 - Received request for /detect/image/
+2024-12-27 16:53:37.764 | INFO     | app.utils.image_processing:read_image:7 - Reading image from bytes
+2024-12-27 16:53:37.771 | INFO     | app.models.yolo_model:detect:10 - Running detection on image
+2024-12-27 16:54:06.760 | INFO     | app.routers.detection:detect_transport_image:27 - Received request for /detect/image/
+2024-12-27 16:54:06.761 | INFO     | app.utils.image_processing:read_image:7 - Reading image from bytes
+2024-12-27 16:54:06.763 | INFO     | app.models.yolo_model:detect:10 - Running detection on image
+2024-12-27 16:54:20.062 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-27 16:54:31.728 | INFO     | app.routers.detection:detect_transport_image:27 - Received request for /detect/image/
+2024-12-27 16:54:31.728 | INFO     | app.utils.image_processing:read_image:7 - Reading image from bytes
+2024-12-27 16:54:31.730 | INFO     | app.models.yolo_model:detect:10 - Running detection on image
+2024-12-27 16:56:42.380 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-27 16:57:02.857 | INFO     | app.routers.detection:detect_transport_coordinates:16 - Received request for /detect/
+2024-12-27 16:57:02.858 | INFO     | app.utils.image_processing:read_image:7 - Reading image from bytes
+2024-12-27 16:57:02.859 | INFO     | app.models.yolo_model:detect:10 - Running detection on image
+2024-12-27 17:00:05.095 | INFO     | app.routers.detection:detect_transport_image:27 - Received request for /detect/image/
+2024-12-27 17:00:05.096 | INFO     | app.utils.image_processing:read_image:7 - Reading image from bytes
+2024-12-27 17:00:05.098 | INFO     | app.models.yolo_model:detect:10 - Running detection on image
+2024-12-27 17:01:47.096 | INFO     | app.main:root:18 - Root endpoint accessed
+2024-12-27 17:03:21.311 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 17:54:47.591 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 17:56:14.805 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 17:57:39.969 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 17:58:21.954 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 17:58:46.166 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 17:59:22.834 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:00:31.349 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:00:42.812 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:01:41.340 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:02:05.508 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:04:23.561 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:06:46.150 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:07:37.120 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:08:04.070 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:09:31.180 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:11:29.616 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:14:24.114 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:16:26.779 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:17:10.657 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:17:32.551 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:17:57.657 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:18:36.447 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:19:00.325 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:20:01.171 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:20:52.256 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:21:08.300 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:21:41.229 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:22:58.556 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:23:24.233 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:23:28.372 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:24:50.613 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from model/yolov5_weights.pt
+2024-12-28 18:35:46.944 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from /Users/dmitriizverev/Developer/HSE/AI-24-Team-45/model/yolov5_weights_1.pt
+2024-12-28 18:35:47.248 | INFO     | app.routers.detection:set_model:29 - Model set to /Users/dmitriizverev/Developer/HSE/AI-24-Team-45/model/yolov5_weights_1.pt
+2024-12-28 18:35:51.455 | INFO     | app.models.yolo_model:__init__:6 - Loading YOLO model from /Users/dmitriizverev/Developer/HSE/AI-24-Team-45/model/yolov5_weights.pt
+2024-12-28 18:35:51.663 | INFO     | app.routers.detection:set_model:29 - Model set to /Users/dmitriizverev/Developer/HSE/AI-24-Team-45/model/yolov5_weights.pt

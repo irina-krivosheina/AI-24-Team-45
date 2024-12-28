@@ -2,14 +2,10 @@ from fastapi import FastAPI
 from app.routers import detection
 import uvicorn
 from loguru import logger
-from app.models.yolo_model import YOLOModel
 
 logger.add("logs/app.log", rotation="5 MB", retention=2, level="INFO")
 
 app = FastAPI()
-
-# Загрузка модели при старте приложения
-model = YOLOModel('model/yolov5_weights.pt')
 
 app.include_router(detection.router)
 
