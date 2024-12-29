@@ -27,9 +27,13 @@ if uploaded_file is not None:
 
             if response.status_code == 200:
                 coordinates = response.json()
-
                 logger.info("Coordinates successfully retrieved and displayed")
-                st.write("Detected Coordinates:", coordinates)
+                
+                # Отображение координат
+                for coord in coordinates:
+                    st.write(f"Class: {coord['name']}, Confidence: {coord['confidence']:.2f}")
+                    st.write(f"Coordinates: ({coord['xmin']}, {coord['ymin']}) to ({coord['xmax']}, {coord['ymax']})")
+                    st.write("---")
             else:
                 logger.error(f"Failed to retrieve coordinates with status code: {response.status_code}")
                 st.error("Error in retrieving coordinates")
