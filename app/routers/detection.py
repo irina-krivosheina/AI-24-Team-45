@@ -3,7 +3,7 @@ from fastapi.responses import StreamingResponse
 
 from app.models.yolo_model import YOLOModel
 from app.utils.image_processing import read_image
-
+from app.models.detection_result import DetectionResult
 from app.models.model_path import ModelPath
 
 import cv2
@@ -33,16 +33,17 @@ async def set_model(data: ModelPath):
         logger.error(f"Error setting model: {e}")
         raise HTTPException(status_code=400, detail="Invalid model path")
 
-@router.post("/detect/", response_model=List[Dict[str, float]])
-async def detect_transport_coordinates(file: Annotated[UploadFile, File(...)]) -> List[Dict[str, float]]:
+@router.post("/detect/", response_model=List[DetectionResult])
+async def detect_transport_coordinates(file: Annotated[UploadFile, File(...)]) -> List[DetectionResult]:
     logger.info("Received request for /detect/")
     try:
         image = read_image(await file.read())
         results = model.detect(image)
-        return results.pandas().xyxy[0].to_dict(orient="records")
+        detections = results.pandas().xyxy[0].to_dict(orient="records")
+        return [DetectionResult(**detection) for detection in detections]
     except Exception as e:
         logger.error(f"Error in detect_transport_coordinates: {e}")
-        raise
+        raise HTTPException(status_code=500, detail="Detection failed")
 
 @router.post("/detect/image/")
 async def detect_transport_image(file: Annotated[UploadFile, File(...)]) -> StreamingResponse:

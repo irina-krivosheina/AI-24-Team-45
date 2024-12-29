@@ -6,7 +6,7 @@ from loguru import logger
 
 API_URL = "http://localhost:8000"
 
-st.title("Transport Detection with YOLOv5")
+st.title("Transport Detection on Image")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
@@ -20,6 +20,7 @@ if uploaded_file is not None:
 
     if st.button("Detect"):
         logger.info("Detection button clicked")
+
         try:
             files = {"file": uploaded_file.getvalue()}
             response = requests.post(f"{API_URL}/detect/image/", files=files)
@@ -27,13 +28,13 @@ if uploaded_file is not None:
 
             if response.status_code == 200:
                 with col2:
+                    logger.info("Detection successful, image displayed")
                     result_image = Image.open(io.BytesIO(response.content))
                     st.image(result_image, caption='Detected Image.', use_container_width=True)
-                    logger.info("Detection successful, image displayed")
             else:
-                st.error("Error in detection process")
                 logger.error(f"Detection failed with status code: {response.status_code}")
+                st.error("Error in detection process")
         except Exception as e:
-            st.error("An error occurred during detection")
             logger.error(f"Exception during detection: {e}")
+            st.error("An error occurred during detection")
 

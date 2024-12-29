@@ -5,7 +5,7 @@ import requests
 
 API_URL = "http://localhost:8000"
 
-logger.add("../logs/streamlit_app.log", rotation="5 MB", retention=2, level="INFO")
+logger.add("../logs/streamlit_app.log", rotation="5 MB", level="ERROR")
 
 model_dir = os.path.abspath("model")
 model_files = os.listdir(model_dir)

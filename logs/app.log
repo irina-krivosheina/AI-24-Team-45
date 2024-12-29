@@ -66,3 +66,8 @@
 2024-12-28 18:42:53.574 | INFO     | app.routers.detection:detect_transport_image:49 - Received request for /detect/image/
 2024-12-28 18:42:53.574 | INFO     | app.utils.image_processing:read_image:7 - Reading image from bytes
 2024-12-28 18:42:53.576 | INFO     | app.models.yolo_model:detect:10 - Running detection on image
+2024-12-29 23:10:34.756 | ERROR    | app.routers.detection:detect_transport_coordinates:45 - Error in detect_transport_coordinates: 1 validation error for DetectionResult
+class_name
+  Field required [type=missing, input_value={'xmin': 132.259124755859...lass': 2, 'name': 'car'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2024-12-29 23:12:40.441 | ERROR    | app.routers.detection:detect_transport_coordinates:45 - Error in detect_transport_coordinates: 'NoneType' object has no attribute 'shape'

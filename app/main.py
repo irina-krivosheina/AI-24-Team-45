@@ -1,9 +1,8 @@
 from fastapi import FastAPI
 from app.routers import detection
-import uvicorn
 from loguru import logger
 
-logger.add("logs/app.log", rotation="5 MB", retention=2, level="INFO")
+logger.add("logs/app.log", rotation="5 MB", level="ERROR")
 
 app = FastAPI()
 
