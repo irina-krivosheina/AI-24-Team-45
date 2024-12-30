@@ -33,8 +33,13 @@ get_coordinates_page = st.Page(
     "pages/get_coordinates_page.py", title="Get Coordinates", icon="📐"
 )
 
+eda_page = st.Page(
+    "pages/eda_page.py", title="EDA", icon="📈"
+)
+
 pg = st.navigation(
-    {
+    {   
+        "Analyze": [eda_page],
         "Inference": [detect_image_page, get_coordinates_page],
     }
 )
