@@ -1,6 +1,9 @@
 fastapi
 uvicorn
+loguru
+requests
+pillow
 torch
 opencv-python
-pandas
-ultralytics
+flake8
+pylint

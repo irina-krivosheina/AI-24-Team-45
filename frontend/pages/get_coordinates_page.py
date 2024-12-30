@@ -7,7 +7,7 @@ import os
 
 API_URL = "http://localhost:8000"
 
-logger.add("../logs/streamlit_app.log", rotation="5 MB", level="ERROR")
+logger.add("logs/streamlit_app.log", rotation="5 MB", level="ERROR")
 
 st.title("Get Coordinates from Image")
 
@@ -29,7 +29,6 @@ if uploaded_file is not None:
                 coordinates = response.json()
                 logger.info("Coordinates successfully retrieved and displayed")
                 
-                # Отображение координат
                 for coord in coordinates:
                     st.write(f"Class: {coord['name']}, Confidence: {coord['confidence']:.2f}")
                     st.write(f"Coordinates: ({coord['xmin']}, {coord['ymin']}) to ({coord['xmax']}, {coord['ymax']})")

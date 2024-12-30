@@ -6,7 +6,7 @@ from loguru import logger
 
 API_URL = "http://localhost:8000"
 
-logger.add("../logs/streamlit_app.log", rotation="5 MB", level="ERROR")
+logger.add("logs/streamlit_app.log", rotation="5 MB", level="ERROR")
 
 st.title("Transport Detection on Image")
 
