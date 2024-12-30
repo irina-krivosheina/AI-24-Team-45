@@ -6,7 +6,7 @@ import seaborn as sns
 
 def load_data():
     """Load and preprocess the training progress data."""
-    df = pd.read_csv("training_progress.csv")
+    df = pd.read_csv("frontend/public/training_progress.csv")
     df.columns = df.columns.str.strip()
     return df
 

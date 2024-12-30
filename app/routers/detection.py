@@ -4,10 +4,10 @@ import cv2
 from loguru import logger
 from fastapi import APIRouter, File, UploadFile, HTTPException
 from fastapi.responses import StreamingResponse
-from app.utils.image_processing import read_image
-from app.models.detection_result import DetectionResult
-from app.models.model_path import ModelPath
-from app.utils.model_manager import ModelManager
+from app_utils.image_processing import read_image
+from app_utils.model_manager import ModelManager
+from app_models.detection_result import DetectionResult
+from app_models.model_path import ModelPath
 
 router = APIRouter()
 

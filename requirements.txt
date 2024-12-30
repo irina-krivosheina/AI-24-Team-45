@@ -1,9 +1,15 @@
+torch
+ultralytics
 fastapi
 uvicorn
 loguru
 requests
 pillow
-torch
 opencv-python
 flake8
 pylint
+streamlit
+pandas
+matplotlib
+seaborn
+python-multipart

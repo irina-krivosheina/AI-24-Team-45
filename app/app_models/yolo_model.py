@@ -8,7 +8,7 @@ class YOLOModel:
     def __init__(self, model_path: str):
         """Initialize the YOLO model with the given model path."""
         logger.info(f"Loading YOLO model from {model_path}")
-        self.model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path)
+        self.model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path, trust_repo=True)
 
     def detect(self, image):
         """Run detection on the provided image."""
