@@ -5,7 +5,7 @@ import requests
 
 API_URL = "http://localhost:8000"
 
-logger.add("../logs/streamlit_app.log", rotation="5 MB", level="ERROR")
+logger.add("logs/streamlit_app.log", rotation="5 MB", level="ERROR")
 
 model_dir = os.path.abspath("model")
 model_files = os.listdir(model_dir)
@@ -37,9 +37,13 @@ eda_page = st.Page(
     "pages/eda_page.py", title="EDA", icon="📈"
 )
 
+training_progress_page = st.Page(
+    "pages/training_progress_page.py", title="Training Progress", icon="🏁"
+)
+
 pg = st.navigation(
     {   
-        "Analyze": [eda_page],
+        "Analyze": [eda_page, training_progress_page],
         "Inference": [detect_image_page, get_coordinates_page],
     }
 )
