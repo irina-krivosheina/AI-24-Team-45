@@ -1,12 +1,11 @@
 import streamlit as st
 import requests
 from PIL import Image
-import io
 from loguru import logger
 
 API_URL = "http://localhost:8000"
 
-logger.add("logs/streamlit_app.log", rotation="5 MB", level="ERROR")
+logger.add("../logs/streamlit_app.log", rotation="5 MB", level="ERROR")
 
 st.title("Get Coordinates from Image")
 
@@ -21,7 +20,7 @@ if uploaded_file is not None:
         logger.info("Get Coordinates button clicked")
         try:
             files = {"file": uploaded_file.getvalue()}
-            response = requests.post(f"{API_URL}/detect/", files=files)
+            response = requests.post(f"{API_URL}/detect/", files=files, timeout=10)
             logger.info(f"Request sent to {API_URL}/detect/")
 
             if response.status_code == 200:
@@ -35,6 +34,6 @@ if uploaded_file is not None:
             else:
                 logger.error(f"Failed to retrieve coordinates with status code: {response.status_code}")
                 st.error("Error in retrieving coordinates")
-        except Exception as e:
+        except requests.exceptions.RequestException as e:
             logger.error(f"Exception during coordinates retrieval: {e}")
             st.error("An error occurred while retrieving coordinates")

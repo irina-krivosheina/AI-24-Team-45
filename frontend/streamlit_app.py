@@ -1,6 +1,6 @@
+import os
 import streamlit as st
 from loguru import logger
-import os
 import requests
 
 API_URL = "http://localhost:8000"
@@ -17,7 +17,7 @@ if st.sidebar.button("Set Model"):
         st.sidebar.error(f"Model file not found: {model_path}")
         logger.error(f"Model file not found: {model_path}")
     else:
-        response = requests.post(f"{API_URL}/set_model/", json={"model_path": model_path})
+        response = requests.post(f"{API_URL}/set_model/", json={"model_path": model_path}, timeout=10)
         if response.status_code == 200:
             st.sidebar.success(f"Model set to {selected_model}")
             logger.info(f"Model set to {selected_model}")
