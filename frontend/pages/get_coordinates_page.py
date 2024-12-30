@@ -3,7 +3,6 @@ import requests
 from PIL import Image
 import io
 from loguru import logger
-import os
 
 API_URL = "http://localhost:8000"
 
@@ -28,7 +27,7 @@ if uploaded_file is not None:
             if response.status_code == 200:
                 coordinates = response.json()
                 logger.info("Coordinates successfully retrieved and displayed")
-                
+
                 for coord in coordinates:
                     st.write(f"Class: {coord['name']}, Confidence: {coord['confidence']:.2f}")
                     st.write(f"Coordinates: ({coord['xmin']}, {coord['ymin']}) to ({coord['xmax']}, {coord['ymax']})")

@@ -26,7 +26,7 @@ if uploaded_file is not None:
             logger.info(f"Request sent to {API_URL}/detect/image/")
 
             if response.status_code == 200:
-                result_image = Image.open(io.BytesIO(response.content))            
+                result_image = Image.open(io.BytesIO(response.content))
                 image_container.image(result_image, caption='Detected Image with Bounding Boxes.', use_container_width=True)
                 logger.info("Detection successful, image displayed")
             else:

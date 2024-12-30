@@ -1,5 +1,6 @@
 import sys
 import subprocess
+import os
 
 
 def run_flake8(script_path):
@@ -13,7 +14,13 @@ def run_flake8(script_path):
 
 def run_pylint(script_path):
     """Run pylint on the specified script."""
-    pylint_command = f"pylint {script_path} --max-line-length=120 --disable=C0103,C0114,C0115"
+    os.environ['PYTHONPATH'] = os.getcwd()
+    pylint_command = (
+        f"pylint {script_path} "
+        "--max-line-length=120 "
+        "--disable=C0103,C0114,C0115 "
+        "--generated-members=cv2.*"
+    )
     pylint_result = subprocess.run(pylint_command, shell=True, capture_output=True, text=True, check=False)
     print("pylint output:")
     print(pylint_result.stdout)

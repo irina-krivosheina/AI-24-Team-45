@@ -1,6 +1,6 @@
 from loguru import logger
 from fastapi import FastAPI
-from routers import detection
+from app.routers import detection
 
 logger.add("logs/app.log", rotation="5 MB", level="ERROR")
 

@@ -1,5 +1,6 @@
 from pydantic import BaseModel, Field
 
+
 class DetectionResult(BaseModel):
     xmin: float
     ymin: float
