@@ -2,7 +2,7 @@ import io
 from typing import Annotated, List
 import cv2
 from loguru import logger
-from fastapi import APIRouter, File, UploadFile, HTTPException
+from fastapi import APIRouter, File, UploadFile, HTTPException, Depends
 from fastapi.responses import StreamingResponse
 from app_utils.image_processing import read_image
 from app_utils.model_manager import ModelManager
@@ -11,11 +11,9 @@ from app_models.model_path import ModelPath
 
 router = APIRouter()
 
-model_manager = ModelManager('model/yolov5_weights.pt')
-
 
 @router.post("/set_model/")
-async def set_model(data: ModelPath):
+async def set_model(data: ModelPath, model_manager: ModelManager = Depends()):
     """Set the model for detection."""
     try:
         model_manager.set_model(data.model_path)
@@ -26,7 +24,10 @@ async def set_model(data: ModelPath):
 
 
 @router.post("/detect/", response_model=List[DetectionResult])
-async def detect_transport_coordinates(file: Annotated[UploadFile, File(...)]) -> List[DetectionResult]:
+async def detect_transport_coordinates(
+    file: Annotated[UploadFile, File(...)], 
+    model_manager: ModelManager = Depends()
+) -> List[DetectionResult]:
     """Detect transport coordinates in the uploaded image."""
     logger.info("Received request for /detect/")
     try:
@@ -40,7 +41,10 @@ async def detect_transport_coordinates(file: Annotated[UploadFile, File(...)]) -
 
 
 @router.post("/detect/image/")
-async def detect_transport_image(file: Annotated[UploadFile, File(...)]) -> StreamingResponse:
+async def detect_transport_image(
+    file: Annotated[UploadFile, File(...)],
+    model_manager: ModelManager = Depends()
+) -> StreamingResponse:
     """Detect transport in the uploaded image and return the image with bounding boxes."""
     logger.info("Received request for /detect/image/")
     try:

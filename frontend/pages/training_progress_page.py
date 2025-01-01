@@ -2,13 +2,21 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
+from loguru import logger
 
 
 def load_data():
     """Load and preprocess the training progress data."""
-    df = pd.read_csv("frontend/public/training_progress.csv")
-    df.columns = df.columns.str.strip()
-    return df
+    file_path = "../public/training_progress.csv"
+
+    if os.path.exists(file_path):
+        df = pd.read_csv(file_path)
+        df.columns = df.columns.str.strip()
+        return df
+
+    logger.error(f"File not found: {file_path}")
+    return None
 
 
 def plot_losses(df):
@@ -112,6 +120,10 @@ st.title("Training Progress YOLOv5")
 st.write("Training progress by 28 epochs of model yolov5_weights.pt")
 
 data_frame = load_data()
-plot_losses(data_frame)
-plot_metrics(data_frame)
-plot_learning_rates(data_frame)
+
+if not data_frame:
+    st.error("No data available to plot.")
+else:
+    plot_losses(data_frame)
+    plot_metrics(data_frame)
+    plot_learning_rates(data_frame)

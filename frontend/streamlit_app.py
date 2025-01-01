@@ -2,12 +2,12 @@ import os
 import streamlit as st
 from loguru import logger
 import requests
+import logging_config  # pylint: disable=unused-import
+
 
 API_URL = "http://localhost:8000"
 
-logger.add("logs/streamlit_app.log", rotation="5 MB", level="ERROR")
-
-model_dir = os.path.abspath("model")
+model_dir = os.path.abspath("../model")
 model_files = os.listdir(model_dir)
 selected_model = st.sidebar.selectbox("Choose a model", model_files)
 
@@ -42,7 +42,7 @@ training_progress_page = st.Page(
 )
 
 pg = st.navigation(
-    {   
+    {
         "Analyze": [eda_page, training_progress_page],
         "Inference": [detect_image_page, get_coordinates_page],
     }
