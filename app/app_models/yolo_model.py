@@ -5,9 +5,11 @@ from loguru import logger
 class YOLOModel:
     """A class representing a YOLO model for object detection."""
 
-    def __init__(self, model_path: str):
+    def __init__(self, model_name: str, model_path: str):
         """Initialize the YOLO model with the given model path."""
         logger.info(f"Loading YOLO model from {model_path}")
+        self.model_name = model_name
+        self.model_path = model_path
         self.model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path, trust_repo=True)
 
     def detect(self, image):
@@ -17,5 +19,8 @@ class YOLOModel:
         return results
 
     def get_model_info(self):
-        """Return information about the loaded model."""
-        return self.model.yaml
+        """Return information about the model."""
+        return {
+            "model_name": self.model_name,
+            "model_path": self.model_path
+        }

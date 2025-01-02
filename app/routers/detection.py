@@ -7,25 +7,13 @@ from fastapi.responses import StreamingResponse
 from app_utils.image_processing import read_image
 from app_utils.model_manager import ModelManager
 from app_models.detection_result import DetectionResult
-from app_models.model_path import ModelPath
 
-router = APIRouter()
-
-
-@router.post("/set_model/")
-async def set_model(data: ModelPath, model_manager: ModelManager = Depends()):
-    """Set the model for detection."""
-    try:
-        model_manager.set_model(data.model_path)
-        return {"message": f"Model set to {data.model_path}"}
-    except Exception as e:
-        logger.error(f"Error setting model: {e}")
-        raise HTTPException(status_code=400, detail="Invalid model path") from e
+router = APIRouter(tags=["detection"], prefix="/detect")
 
 
-@router.post("/detect/", response_model=List[DetectionResult])
+@router.post("/coordinates", response_model=List[DetectionResult])
 async def detect_transport_coordinates(
-    file: Annotated[UploadFile, File(...)], 
+    file: Annotated[UploadFile, File(...)],
     model_manager: ModelManager = Depends()
 ) -> List[DetectionResult]:
     """Detect transport coordinates in the uploaded image."""
@@ -40,7 +28,7 @@ async def detect_transport_coordinates(
         raise HTTPException(status_code=500, detail="Detection failed") from e
 
 
-@router.post("/detect/image/")
+@router.post("/image")
 async def detect_transport_image(
     file: Annotated[UploadFile, File(...)],
     model_manager: ModelManager = Depends()
