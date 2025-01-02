@@ -3,7 +3,7 @@ from fastapi import FastAPI, Depends
 from routers import detection, models
 from app_utils.model_manager import ModelManager
 
-logger.add("logs/app.log", rotation="5 MB", level="ERROR")
+logger.add("logs/app.log", rotation="5 MB", level="INFO")
 
 app = FastAPI()
 

@@ -122,8 +122,8 @@ st.write("Training progress by 28 epochs of model yolov5_weights.pt")
 data_frame = load_data()
 
 if not data_frame:
-    st.error("No data available to plot.")
-else:
     plot_losses(data_frame)
     plot_metrics(data_frame)
     plot_learning_rates(data_frame)
+else:
+    st.error("No data available to plot.")

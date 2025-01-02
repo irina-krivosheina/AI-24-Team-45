@@ -33,7 +33,7 @@ st.info(
 
 st.header("Распределение объектов разных классов в датасете в процентом соотношении")
 st.image(
-    "images/gist.png",
+    "../images/gist.png",
     caption="Распределение объектов"
 )
 st.write("""
@@ -64,7 +64,7 @@ unknown	0.007589
 """)
 
 st.header("Примеры инференса")
-image_folder = "images"
+image_folder = "../images"
 image_files = [f for f in os.listdir(image_folder) if 'expl_bbox' in f]
 
 for image_file in image_files:

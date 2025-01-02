@@ -7,23 +7,25 @@ import logging_config  # pylint: disable=unused-import
 
 API_URL = "http://localhost:8000"
 
-model_dir = os.path.abspath("../model")
-model_files = os.listdir(model_dir)
+response = requests.get(f"{API_URL}/models/available")
+model_files = response.json() if response.status_code == 200 else []
+
 selected_model = st.sidebar.selectbox("Choose a model", model_files)
 
+current_model_response = requests.get(f"{API_URL}/models/current")
+current_model = current_model_response.json() if current_model_response.status_code == 200 else None
+
+if current_model:
+    st.sidebar.write(f"Current model: {current_model}")
+
 if st.sidebar.button("Set Model"):
-    model_path = os.path.join(model_dir, selected_model)
-    if not os.path.exists(model_path):
-        st.sidebar.error(f"Model file not found: {model_path}")
-        logger.error(f"Model file not found: {model_path}")
+    response = requests.post(f"{API_URL}/models/set_model?model_name={selected_model}", timeout=10)
+    if response.status_code == 200:
+        st.sidebar.success(f"Model set to {selected_model}")
+        logger.info(f"Model set to {selected_model}")
     else:
-        response = requests.post(f"{API_URL}/set_model/", json={"model_path": model_path}, timeout=10)
-        if response.status_code == 200:
-            st.sidebar.success(f"Model set to {selected_model}")
-            logger.info(f"Model set to {selected_model}")
-        else:
-            st.sidebar.error("Failed to set model")
-            logger.error("Failed to set model")
+        st.sidebar.error("Failed to set model")
+        logger.error(f"Failed to set model: {selected_model}, Status Code: {response.status_code}, Response: {response.text}")
 
 detect_image_page = st.Page(
     "pages/detect_image_page.py", title="Detect Image", icon="🚗", default=True
