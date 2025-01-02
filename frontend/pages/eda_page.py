@@ -63,10 +63,17 @@ unknown	0.007589
 ```
 """)
 
-st.header("Примеры инференса")
-image_folder = "../images"
-image_files = [f for f in os.listdir(image_folder) if 'expl_bbox' in f]
 
-for image_file in image_files:
-    image_path = os.path.join(image_folder, image_file)
-    st.image(image_path, caption=image_file)
+@st.cache_data
+def load_images():
+    """Load images for EDA page.""" 
+    image_folder = "../images"
+    image_files = [f for f in os.listdir(image_folder) if 'expl_bbox' in f]
+
+    for image_file in image_files:
+        image_path = os.path.join(image_folder, image_file)
+        st.image(image_path, caption=image_file)
+
+
+st.header("Примеры инференса")
+load_images()

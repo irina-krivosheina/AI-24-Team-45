@@ -1,14 +1,14 @@
+import os
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import os
 from loguru import logger
 
 
 def load_data():
     """Load and preprocess the training progress data."""
-    file_path = "../public/training_progress.csv"
+    file_path = "./public/training_progress.csv"
 
     if os.path.exists(file_path):
         df = pd.read_csv(file_path)
@@ -121,7 +121,7 @@ st.write("Training progress by 28 epochs of model yolov5_weights.pt")
 
 data_frame = load_data()
 
-if not data_frame:
+if data_frame is not None and not data_frame.empty:
     plot_losses(data_frame)
     plot_metrics(data_frame)
     plot_learning_rates(data_frame)

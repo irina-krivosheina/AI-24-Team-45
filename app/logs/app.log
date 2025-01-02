@@ -1,7 +1,0 @@
-2025-01-02 00:09:33.966 | ERROR    | routers.detection:detect_transport_coordinates:24 - Error in detect_transport_coordinates: name 'model_manager' is not defined
-2025-01-02 00:10:30.414 | ERROR    | routers.detection:detect_transport_coordinates:24 - Error in detect_transport_coordinates: name 'model_manager' is not defined
-2025-01-02 00:19:18.764 | ERROR    | routers.detection:detect_transport_coordinates:23 - Error in detect_transport_coordinates: name 'model_manager' is not defined
-2025-01-02 00:20:01.639 | ERROR    | routers.detection:detect_transport_coordinates:23 - Error in detect_transport_coordinates: 'ModelManager' object has no attribute 'model'
-2025-01-02 00:21:12.343 | ERROR    | routers.detection:detect_transport_coordinates:25 - Error in detect_transport_coordinates: 'NoneType' object has no attribute 'detect'
-2025-01-02 00:56:24.886 | ERROR    | routers.detection:detect_transport_coordinates:24 - Error in detect_transport_coordinates: 'NoneType' object has no attribute 'detect'
-2025-01-02 01:21:57.840 | ERROR    | routers.models:set_model:16 - Error setting model: name 'data' is not defined
