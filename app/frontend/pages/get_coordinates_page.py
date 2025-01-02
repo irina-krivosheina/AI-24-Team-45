@@ -2,8 +2,7 @@ import streamlit as st
 import requests
 from PIL import Image
 from loguru import logger
-
-API_URL = "http://localhost:8000"
+from config import API_BASE_URL
 
 st.title("Get Coordinates from Image")
 
@@ -18,8 +17,8 @@ if uploaded_file is not None:
         logger.info("Get Coordinates button clicked")
         try:
             files = {"file": uploaded_file.getvalue()}
-            response = requests.post(f"{API_URL}/detect/coordinates", files=files, timeout=10)
-            logger.info(f"Request sent to {API_URL}/detect/coordinates")
+            response = requests.post(f"{API_BASE_URL}/detect/coordinates", files=files, timeout=10)
+            logger.info(f"Request sent to {API_BASE_URL}/detect/coordinates")
 
             if response.status_code == 200:
                 coordinates = response.json()

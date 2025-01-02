@@ -1,22 +1,28 @@
-version: "3.8"
-
 services:
   frontend:
     build:
       context: .
-      dockerfile: frontend/Dockerfile
+      dockerfile: app/frontend/Dockerfile
     ports:
       - "8501:8501"
+    environment:
+      - STREAMLIT_PORT=8501
     volumes:
-      - ./frontend/public/training_progress.csv:/app/training_progress.csv
-      - ./model:/app/model
-      - ./images:/app/images
+      - ./app/frontend/public/training_progress.csv:/app/frontend/public/training_progress.csv
+      - ./model:/model
+      - ./images:/images
+    env_file:
+      - .env.${ENVIRONMENT}
 
   backend:
     build:
       context: .
-      dockerfile: app/Dockerfile
+      dockerfile: app/backend/Dockerfile
     ports:
-      - "8000:8000"
+      - "8080:80"
+    environment:
+      - API_PORT=80
     volumes:
-      - ./model:/app/model
+      - ./model:/model
+    env_file:
+      - .env.${ENVIRONMENT}

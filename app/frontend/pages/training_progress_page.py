@@ -4,11 +4,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from loguru import logger
+from config import TRAINING_PROGRESS_PATH
 
 
 def load_data():
     """Load and preprocess the training progress data."""
-    file_path = "./public/training_progress.csv"
+    file_path = TRAINING_PROGRESS_PATH
 
     if os.path.exists(file_path):
         df = pd.read_csv(file_path)

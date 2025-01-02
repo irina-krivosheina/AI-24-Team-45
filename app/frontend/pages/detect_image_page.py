@@ -3,8 +3,8 @@ import streamlit as st
 import requests
 from PIL import Image
 from loguru import logger
+from config import API_BASE_URL
 
-API_URL = "http://localhost:8000"
 
 st.title("Transport Detection on Image")
 
@@ -21,9 +21,9 @@ if uploaded_file is not None:
         try:
             files = {"file": uploaded_file.getvalue()}
             response = requests.post(
-                f"{API_URL}/detect/image/", files=files, timeout=10
+                f"{API_BASE_URL}/detect/image/", files=files, timeout=10
             )
-            logger.info(f"Request sent to {API_URL}/detect/image/")
+            logger.info(f"Request sent to {API_BASE_URL}/detect/image/")
 
             if response.status_code == 200:
                 result_image = Image.open(io.BytesIO(response.content))

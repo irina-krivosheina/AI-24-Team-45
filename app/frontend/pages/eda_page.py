@@ -1,5 +1,6 @@
 import os
 import streamlit as st
+from config import IMAGE_PATH
 
 st.title("Exploratory Data Analysis (EDA)")
 
@@ -33,7 +34,7 @@ st.info(
 
 st.header("Распределение объектов разных классов в датасете в процентом соотношении")
 st.image(
-    "../images/gist.png",
+    f"{IMAGE_PATH}/gist.png",
     caption="Распределение объектов"
 )
 st.write("""
@@ -67,7 +68,7 @@ unknown	0.007589
 @st.cache_data
 def load_images():
     """Load images for EDA page.""" 
-    image_folder = "../images"
+    image_folder = IMAGE_PATH
     image_files = [f for f in os.listdir(image_folder) if 'expl_bbox' in f]
 
     for image_file in image_files:

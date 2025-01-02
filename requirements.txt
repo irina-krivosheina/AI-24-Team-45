@@ -13,3 +13,4 @@ pandas
 matplotlib
 seaborn
 python-multipart
+python-dotenv

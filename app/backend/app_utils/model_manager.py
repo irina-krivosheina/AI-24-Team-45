@@ -1,10 +1,7 @@
 import os
 from loguru import logger
 from app_models.yolo_model import YOLOModel
-
-
-MODEL_PATHS = "../model"
-DEFAULT_MODEL = "yolov5_weights.pt"
+from config import MODEL_PATH, DEFAULT_MODEL
 
 
 class ModelManager:
@@ -14,9 +11,9 @@ class ModelManager:
         if cls._instance is None:
             cls._instance = super(ModelManager, cls).__new__(cls)
             cls._instance.models = {
-                f: os.path.join(MODEL_PATHS, f)
-                for f in os.listdir(MODEL_PATHS)
-                if os.path.isfile(os.path.join(MODEL_PATHS, f))
+                f: os.path.join(MODEL_PATH, f)
+                for f in os.listdir(MODEL_PATH)
+                if os.path.isfile(os.path.join(MODEL_PATH, f))
             }
             cls._instance.model = YOLOModel(DEFAULT_MODEL, cls._instance.models[DEFAULT_MODEL])
             logger.info(f"Models loaded: {cls._instance.models}")
@@ -25,9 +22,9 @@ class ModelManager:
     def __init__(self):
         if not hasattr(self, 'models'):
             self.models = {
-                f: os.path.join(MODEL_PATHS, f)
-                for f in os.listdir(MODEL_PATHS)
-                if os.path.isfile(os.path.join(MODEL_PATHS, f))
+                f: os.path.join(MODEL_PATH, f)
+                for f in os.listdir(MODEL_PATH)
+                if os.path.isfile(os.path.join(MODEL_PATH, f))
             }
             self.model = YOLOModel(DEFAULT_MODEL, self.models[DEFAULT_MODEL])
             logger.info(f"Models loaded: {self.models}")

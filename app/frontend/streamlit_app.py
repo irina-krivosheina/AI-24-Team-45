@@ -1,14 +1,15 @@
+import os
 import streamlit as st
 from loguru import logger
 import requests
 import logging_config  # pylint: disable=unused-import  # noqa: F401
+from config import API_BASE_URL
 
-API_URL = "http://localhost:8000"
 
-available_models_response = requests.get(f"{API_URL}/models/available", timeout=10)
+available_models_response = requests.get(f"{API_BASE_URL}/models/available", timeout=10)
 model_files = available_models_response.json() if available_models_response.status_code == 200 else []
 
-current_model_response = requests.get(f"{API_URL}/models/current", timeout=10)
+current_model_response = requests.get(f"{API_BASE_URL}/models/current", timeout=10)
 current_model = current_model_response.json() if current_model_response.status_code == 200 else None
 
 if "selected_model" not in st.session_state:
@@ -19,7 +20,7 @@ def update_model():
     """Update the selected model on the server."""
     selected = st.session_state.selected_model
     set_model_response = requests.post(
-        f"{API_URL}/models/set_model?model_name={selected}", timeout=10
+        f"{API_BASE_URL}/models/set_model?model_name={selected}", timeout=10
     )
     if set_model_response.status_code == 200:
         st.sidebar.success(f"Model set to {selected}")
