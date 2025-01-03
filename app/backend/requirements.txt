@@ -1,0 +1,11 @@
+torch
+ultralytics
+fastapi
+uvicorn
+loguru
+pillow
+opencv-python
+flake8
+pylint
+python-multipart
+python-dotenv

@@ -1,0 +1,12 @@
+fastapi
+loguru
+requests
+pillow
+flake8
+pylint
+streamlit
+pandas
+matplotlib
+seaborn
+python-multipart
+python-dotenv
