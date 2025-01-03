@@ -6,6 +6,14 @@ import logging_config  # pylint: disable=unused-import  # noqa: F401
 from config import API_BASE_URL
 
 
+st.set_page_config(
+    page_title="ai-24-team-45",
+    page_icon="assets/favicon.ico",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+
 available_models_response = requests.get(f"{API_BASE_URL}/models/available", timeout=10)
 model_files = available_models_response.json() if available_models_response.status_code == 200 else []
 
@@ -64,10 +72,15 @@ training_progress_page = st.Page(
     "pages/training_progress_page.py", title="Training Progress", icon="🏁"
 )
 
+fit_model_page = st.Page(
+    "pages/fit_model_page.py", title="Fit", icon="🏁"
+)
+
 pg = st.navigation(
     {
         "Analyze": [eda_page, training_progress_page],
         "Inference": [detect_image_page, get_coordinates_page],
+        "Upgrade Model": [fit_model_page],
     }
 )
 

@@ -9,7 +9,6 @@ services:
     environment:
       - STREAMLIT_PORT=8501
     volumes:
-      - ./app/frontend/public/training_progress.csv:/app/frontend/public/training_progress.csv
       - ./model:/model
       - ./images:/images
     env_file:
