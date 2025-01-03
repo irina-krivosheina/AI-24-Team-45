@@ -1,7 +1,5 @@
 import os
 from dotenv import load_dotenv
-from loguru import logger
-
 
 environment = os.getenv("ENVIRONMENT", "development")
 dotenv_file = f"../../.env.{environment}"

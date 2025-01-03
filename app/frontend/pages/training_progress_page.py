@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from loguru import logger
-from config import TRAINING_PROGRESS_PATH
+from settings.config import TRAINING_PROGRESS_PATH
 
 
 def load_data():

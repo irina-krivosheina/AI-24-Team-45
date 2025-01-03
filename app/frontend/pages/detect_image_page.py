@@ -3,8 +3,7 @@ import streamlit as st
 import requests
 from PIL import Image
 from loguru import logger
-from config import API_BASE_URL
-
+from settings.config import API_BASE_URL
 
 st.title("Transport Detection on Image")
 

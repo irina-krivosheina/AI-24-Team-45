@@ -1,9 +1,8 @@
-import os
 import streamlit as st
 from loguru import logger
 import requests
-import logging_config  # pylint: disable=unused-import  # noqa: F401
-from config import API_BASE_URL
+import settings.logging_config  # pylint: disable=unused-import  # noqa: F401
+from settings.config import API_BASE_URL
 
 
 st.set_page_config(

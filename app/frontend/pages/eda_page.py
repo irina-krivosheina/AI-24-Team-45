@@ -1,6 +1,6 @@
 import os
 import streamlit as st
-from config import IMAGE_PATH
+from settings.config import IMAGE_PATH
 
 st.title("Exploratory Data Analysis (EDA)")
 

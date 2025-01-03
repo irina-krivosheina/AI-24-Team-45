@@ -2,10 +2,6 @@ import os
 import sys
 import subprocess
 
-# Добавьте пути к app и frontend
-sys.path.insert(0, os.path.join(os.getcwd(), 'app'))
-sys.path.insert(0, os.path.join(os.getcwd(), 'frontend'))
-
 
 def run_flake8(script_path):
     """Run flake8 on the specified script."""
@@ -18,7 +14,7 @@ def run_flake8(script_path):
 
 def run_pylint(script_path):
     """Run pylint on the specified script."""
-    pythonpath = os.pathsep.join([os.path.join(os.getcwd(), 'app'), os.path.join(os.getcwd(), 'frontend')])
+    pythonpath = os.pathsep.join([os.getcwd(), os.path.join(os.getcwd(), "backend"), os.path.join(os.getcwd(), "frontend")])
     pylint_command = (
         f"PYTHONPATH={pythonpath} pylint {script_path} "
         "--max-line-length=120 "
