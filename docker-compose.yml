@@ -1,0 +1,29 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: app/frontend/Dockerfile
+    platform: linux/amd64
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_PORT=8501
+    volumes:
+      - ./model:/model
+      - ./images:/images
+    env_file:
+      - .env.${ENVIRONMENT}
+
+  backend:
+    build:
+      context: .
+      dockerfile: app/backend/Dockerfile
+    platform: linux/amd64
+    ports:
+      - "8080:80"
+    environment:
+      - API_PORT=80
+    volumes:
+      - ./model:/model
+    env_file:
+      - .env.${ENVIRONMENT}
